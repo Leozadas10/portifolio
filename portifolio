@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="./styles/style.css">
+        <link rel="stylesheet" href="styles/responsivo.css">
+        <link rel="shortcut icon" href="assets/github2.png" type="image/x-icon">
+        <title>PORTIFOLIO</title>
+    </head>
+    <body>
+        <header class="cabecalho">
+            <nav class="cabecalho-menu gradiente">
+                ...
+                <a class="cabecalho-menu-link" href="index.html">Home</a>
+                <a class="cabecalho-menu-link" href="about.html">Sobre mim</a>
+                ...
+            </nav>
+        <main class="apresentacao">
+            <section class="apresentacao-conteudo">
+                ;;;
+                <h1 class="apresentacao-conteudo-titulo">Eleve seu negócio digital a outro nível <strong class="titulo-destaque gradiente">com um Front-end de qualidade!</strong></h1>
+                <p class="apresentacao-conteudo-texto">Olá, me chamo Lonardo, sou desenvolvedor Front-end e faço automaçoes com IA. oçoes com especialidade em <strong class="gradiente">HTML e CSS.</strong> Ajudo pequenos negócios e designers a colocarem em prática boas ideias. Vamos conversar?</p>
+
+                <div class="apresentacao-links">
+                    <h2 class="apresentacao-link-subtitulo">Acesse minhas redes:</h2>
+
+                    ........
+                    <a target="_blank" class="apresentacao-links-sociais" href="https://github.com/Leonardo-jokerdev/"><img src="./assets/github2.png" alt="logo-github">GitHub</a>
+
+                    <a target="_blank" class="apresentacao-links-sociais" href=""><img src="./assets/linkedin2.png" alt="logo-linkedin">LinkedIn</a>
+
+                    <a target="_blank" class="apresentacao-links-sociais " href=""><img src="./assets/instagram2.png" alt="logo-instagram">Instagram</a>
+                    <a target="_blank" class="apresentacao-links-sociais" href="https://wa.me/5511999999999"><img src="./assets/whatsapp2.png" alt="logo-whatsapp">WhatsApp</a>
+
+                </div>
+            </section>
+
+            <main class="apresentacao-about">
+                <section class="apresentacao-conteudo">
+                    <h1 class="apresentacao-conteudo-titulo gradiente">Sobre mim</h1>
+                    <p class="sobre-mim-texto">
+                        Após experiência no ramo da  tecnologia, transiciono minha carreira em um novo caminho a automaçoes com IA ( atendimento eficiente com funciolaidades exepcionais) 
+                    </p>
+                    <p class="sobre-mim-texto">
+                        Hoje gerencio um pequeno negócio e direciono todos os meus eforços a me especializar em desenvolvimento web e altomaçoes<br>
+                        <br> Meu plano de estudos tem foco em crecimentos constante, e estou sempre em busca de novos desafios e oportunidades para aprimorar minhas habilidades. Estou animado para ver onde essa jornada me levará e como poderei contribuir para o mundo digital.
+                    </p>
+                </section>
+                <img class="apresentacao-imagem-about" src="......." alt="Programador">
+            </main>
+        
+        </main>
+
+    </body>
+</html>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+:root {
+    --color-bkg: #000;
+    --color-text: #f6f6f6;
+    --importcolor-destaque: #22D4FD;
+    --font1: 'Krona One', sans-serif;
+    --font2: 'Montserrat', sans-serif;
+    --font-size-h1: 1.75rem;
+    --font-size-p: 1.25rem;
+    --color-gradiente: linear-gradient(45deg, #52658C, #73578D, #D1318E);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--color-bkg);
+    color: var(--color-text);
+}
+
+/* classe gradiente */
+.gradiente {
+    background-image: linear-gradient(45deg, #52658C, #73578D, #D1318E);
+    color: #000;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.5rem;
+}
+
+.cabecalho {
+    padding: 2% 0 0 10%;
+}
+
+.cabecalho-menu {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.cabecalho-menu-link {
+    font-family: var(--font2);
+    font-size: var(--font-size-p);
+    font-weight: 600;
+} 
+
+.titulo-destaque {
+    color: var(--color-destaque);
+    font-size: var(--font-size-h1);
+}
+
+.apresentacao {
+    padding: 5% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: rem;
+}
+
+.apresentacao-about {
+    padding: 5% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.apresentacao-conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+}
+
+.apresentacao-conteudo-titulo {
+    font-size: var(--font-size-h1);
+    font-family: var(--font1);
+}
+
+.apresentacao-conteudo-texto {
+    font-size: var(--font-size-p);
+    font-family: var(--font2);
+}
+
+.sobre-mim-texto {
+    font-size: var(--font-size-p);
+    font-family: var(--font2);
+    /
+}
+.apresentacao-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.apresentacao-link-subtitulo {
+    font-family: var(--font1);
+    font-weight: 400;
+    font-size: var(--font-size-p);
+}
+
+.apresentacao-links-sociais {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    border: 2px solid #73578D;
+    width: 50%;
+    text-align: center;
+    border-radius: 0.5rem;
+    font-size: var(--font-size-p);
+    padding: 1rem 0;
+    color: var(--color-text);
+    text-decoration: none;
+    font-family: var(--font2);
+    font-weight: bold;
+}
+
+.apresentacao-links-sociais:hover {
+    background: var(--color-gradiente);
+}
+
+.apresentacao-imagem {
+    width: 50%;
+}
+
+.apresentacao-imagem-about {
+    width: 37%;
+}
+
+.rodape {
+    background: var(--color-gradiente);
+    color: var(--color-text);
+    text-align: center;
+    padding: 1.5%;
+    font-family: var(--font2);
+    font-size: 1rem;
+    font-weight: 600;
+}
+.rodape-link {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+.rodape-link:hover {
+    color: var(--color-destaque);
+}
+
+.rodape-link::before {
+    content: "Made with ❤️ by ";
+}
+
+@media (max-width: 768px) {
+    .cabecalho-menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .apresentacao {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .apresentacao-conteudo {
+        width: 100%;
+    }
+
+    .apresentacao-imagem {
+        width: 100%;
+    }
+}@media (max-width: 1200px ) {
+
+    .cabecalho {
+        padding: 5%;    
+    }
+
+    .cabecalho-menu {
+        justify-content: center;
+        gap: 3.5rem;
+    }
+    
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao-about {
+        flex-direction: column-reverse;
+        padding: 5%;
+        margin-bottom: 5%;
+    }
+
+    .apresentacao-link-subtitulo {
+        margin: 0.75rem 0;
+    }
+
+    .apresentacao-imagem {
+        margin-bottom: 1.5rem;
+        width: 60%;
+    }
+
+    .apresentacao-imagem-about {
+        width: 50%;
+    }
+
+    .apresentacao-conteudo {
+        width: auto;
+    }
+
+    .apresentacao-conteudo-titulo {
+        font-size: 1.5rem;
+    }
+
+    .titulo-destaque {
+        font-size: 1.5rem;
+    }
+
+    .apresentacao-links-sociais {
+        margin-bottom: 1rem;
+        font-size: 1.05rem;
+    }
+
+    .apresentacao-links-sociais:hover {
+        background-color: #272727;
+    }
+
+    .rodape {
+        padding: 5%;
+        font-size: 0.75rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    .apresentacao {
+        padding: 7%;
+    }    
+}
+</style>                
+                
+</html>
